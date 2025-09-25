@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Profile — Feruza Atamtaeva</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="card" role="banner">
+      <h1>Student Profile</h1>
+      <nav aria-label="social-links" class="nav-social">
+        <!-- навигация соцсетей или другие страницы -->
+      </nav>
+    </header>
+
+    <main class="card" role="main">
+      <!-- Profile Section -->
+      <section class="profile" aria-labelledby="profile-title">
+        <div class="avatar">
+          <img src="images/recent:/Screenshot from 2025-07-09 17-04-21.png" alt="Фото студента">
+        </div>
+
+        <div class="bio">
+          <h2 id="profile-title">Atamtaeva Feruza</h2>
+          <p>Computer Science student at University of Central Asia</p>
+
+          <div class="social">
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section aria-labelledby="contact-title" class="contact">
+        <h3 id="contact-title">Contact Form</h3>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <button type="submit" class="submit-btn">Отправить</button>
+
+          <p class="note" id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="card" role="contentinfo">
+      <p>Student: <strong>Feruza Atamtaeva</strong></p>
+      <p class="footer-note">.</p>
+    </footer>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
